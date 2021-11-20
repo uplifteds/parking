@@ -1,0 +1,5 @@
+org/uplifteds/app/entity/Car.class
+org/uplifteds/app/entity/Customer.class
+org/uplifteds/app/repointerface/CustomerRepo.class
+org/uplifteds/app/crud/SpringJDBCDDL.class
+org/uplifteds/app/repointerface/CarRepo.class

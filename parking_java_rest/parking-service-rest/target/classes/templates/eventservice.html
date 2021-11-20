@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Event</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+  </head>
+
+  <body>
+    <h1>Event is created from properties file:</h1>
+
+    <span class="validationError"
+          th:if="${#fields.hasErrors('eventTitle')}"
+          th:errors="*{eventTitle}">Event Error</span>
+
+    <div class="grid">
+
+      <div class="event-group" id="titles">
+        <h3>Event Title:</h3>
+        <span th:text="${eventTitle}" />
+      </div>
+
+      <div class="event-group" id="places">
+        <h3>Event Place:</h3>
+        <span th:text="${eventPlace}" />
+      </div>
+
+      <div class="event-group" id="speakers">
+        <h3>Event Speaker:</h3>
+        <span th:text="${eventSpeaker}" />
+      </div>
+
+      <div class="event-group" id="types">
+        <h3>Event Type:</h3>
+        <span th:text="${eventType}" />
+      </div>
+
+      <div class="event-group" id="datetimes">
+        <h3>Event DateTime:</h3>
+        <span th:text="${eventDateTime}" />
+      </div>
+
+    </div>
+
+    </form>
+
+  </body>
+</html>

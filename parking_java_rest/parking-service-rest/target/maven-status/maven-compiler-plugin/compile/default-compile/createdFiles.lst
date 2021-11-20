@@ -1,0 +1,4 @@
+org/uplifteds/app/controller/CarServiceController.class
+org/uplifteds/app/controller/CustomerServiceController.class
+org/uplifteds/app/RESTSpringBootLauncher.class
+org/uplifteds/app/swagger/SpringFoxConfig.class
